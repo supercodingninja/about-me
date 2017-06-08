@@ -1,0 +1,64 @@
+/*I need to style html markup: make the questions flashy/appealling.*/
+body {
+      background-color: black;
+    }
+
+h1 {
+    color: white;
+    font-size: 24px;
+    font-family:fantasy;
+  }
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-family:fantasy;
+  }
+
+h3 {
+    color: white;
+    font-size: 24px;
+    font-family:fantasy;
+  }
+
+body h4 {
+    color: white;
+    font-size: 100px;
+    font-family:fantasy;
+    -webkit-animation: fadi 5s 1;
+    -moz-animation: fadi 5s 1;
+  }
+  @-webkit-key-frames fadi {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadi {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+a {
+    color: blue;
+    font-size: 50px;
+    font-family:fantasy;
+  }
+
+table {
+    align-items: center;
+    align-content: center;
+  }
+
+h5 {
+    color: white;
+    font-size: 24px;
+    font-family:fantasy;
+    text-align: center;
+  }
+
+h5 script {
+    padding: 1em 100px 5% 100px;
+  }
+
+aside h4 {
+  text-align: right;
+}
