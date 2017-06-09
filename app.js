@@ -1,26 +1,17 @@
-// As a developer, I want to provide five questions to the user, so that they can guess the answers and get to know me.
-//
-// As a developer, I want to notify the user after each question, so they are aware whether they were correct or not in their answers. -->
-//
-// As a developer, I want to be able to debug my code by using well structured console messages.
-//
-// As a developer, I want to manage my code through an online version control system, so I have the ability to work with others, manage my revisions, and keep a thorough record of my progress.
 'use strict';
 
-var userName = prompt ('What is your name?');
-console.log('Very nice to meet you, ' + userName + '.  I always need new friends.');
+var userName = prompt ('Hi!  What is your name?');
+console.log('It is very nice to meet you, ' + userName + '.  I always need new friends.');
 
 computerPrompt = prompt ('Do you know I can tell a lot about a person, when I meet them?  I can; and I will prove it to you!  I will ask you 5 yes or no questions; and I will guess them right: do you want to see if I am right?!');
 
   var userChoice = prompt();
 // What if a user makes an inappropriate choice like 'Get out of my face!'? How can I extend the function to handle that? //
-if (userChoice === 'YES', 'Yes', 'yes', 'Y', 'y') {
-          // Show 'Outcome' //
+if (userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
       console.log('Yes, you want to play; GREAT!');
   }
 
   else if (userChoice === 'NO', 'No', 'no', 'N', 'n') {
-          // Show 'Outcome' //
           console.log('No, you do not want to play...I guess that about you, too!');
       }
 
@@ -96,7 +87,7 @@ var userPersonailty = prompt();
 
           computerPrompt('Do you like wings?');
           if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-                  // Show 'Outcome' //
+                    // Show 'Outcome' //
                   console.log ('Really? Me, too!');
           }
 
