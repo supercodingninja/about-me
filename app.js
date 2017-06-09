@@ -7,6 +7,7 @@
 // As a developer, I want to be able to debug my code by using well structured
 // console messages.
 //
+
 // As a developer, I want to manage my code through an online version control
 // system, so I have the ability to work with others, manage my revisions,
 // and keep a thorough record of my progress.
