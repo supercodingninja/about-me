@@ -21,15 +21,15 @@ function greeting() {
 
   // What if a user makes an inappropriate choice like 'Get out of my face!'? How can I extend the function to handle that? //
   if (userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Yes, you want to play; GREAT!');
   }
   else if (userChoice.toLowerCase() === 'no' || userChoice.toLowerCase() === 'n') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('No, you do not want to play...I guess that about you, too!');
   }
   else {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('No, you do not want to play...I guess that about you, too!');
   }
 }
@@ -38,11 +38,11 @@ function greeting() {
 function question1() {
   var equality = prompt('Do you believe in equality?');
   if (equality.toLowerCase() === 'yes' || equality.toLowerCase() === 'y') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('GREAT!');
   }
   else if (equality.toLowerCase() === 'no' || equality.toLowerCase() === 'n') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Call the police!  Rutabagas and squashs have rights!');
   }
   else {
@@ -55,16 +55,16 @@ function question1() {
 function question2() {
   var share = prompt('Do you believe people are nice when they share?');
   if (share.toLowerCase() === 'yes' || share.toLowerCase() === 'y') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('I think you are correct.');
     console.log('In reponse to being asked if people are nice when they share, the user correctly answered yes.'); // example of correct console.log(), Fred will fill in the rest
   }
   else if (share.toLowerCase() === 'no' || share.toLowerCase() === 'n') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Stop watching too many movies.');
   }
   else {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('And the world, will be a better place...');
   }
 }
@@ -73,14 +73,14 @@ function question2() {
 function question3(){
   var love = prompt('Do you believe that we just need to show love one to another?');
   if (love.toLowerCase() === 'yes' || love.toLowerCase() === 'y') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('You are terrific!');
   }
   else if (love.toLowerCase() === 'no' || love.toLowerCase() === 'n') {
-  // Show 'Outcome' //
+  // Show 'Outcome'
     alert('You know, I have a teddy bear...');}
   else {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('...for you, and me- just wait, and see.');
   }
 }
@@ -89,15 +89,15 @@ function question3(){
 function question4() {
   var wings = prompt('Do you like wings?');
   if (wings.toLowerCase() === 'yes' || wings.toLowerCase() === 'y') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Really? Me, too!');
   }
   else if (wings.toLowerCase() === 'no' || wings.toLowerCase() === 'n') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('No problem.');
   }
   else {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Think of your fellow man.');
   }
 }
@@ -106,14 +106,14 @@ function question4() {
 function question5() {
   var lunch = prompt('So, where are we going for lunch- I knew you like me- you are buying me lunch, right?');
   if (lunch.toLowerCase() === 'yes' || lunch.toLowerCase() === 'y') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Yes, I knew I like you!');}
   else if (lunch.toLowerCase() === 'no' || lunch.toLowerCase() === 'n') {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('I eat cheap...');
   }
   else {
-    // Show 'Outcome' //
+    // Show 'Outcome'
     alert('Think of your fellow man...');
   }
 }
