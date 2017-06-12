@@ -1,135 +1,118 @@
 'use strict';
 
-var userName = prompt ('Hi!  What is your name?');
-console.log('It is very nice to meet you, ' + userName + '.  I always need new friends.');
-
-computerPrompt = prompt ('Do you know I can tell a lot about a person, when I meet them?  I can; and I will prove it to you!  I will ask you 5 yes or no questions; and I will guess them right: do you want to see if I am right?!');
+// Collect user's name, and customize greeting to user based on their input
+function greeting() {
+  var userName = prompt('What is your name?');
+  alert('Very nice to meet you, ' + userName + '.  I always need new friends.  Say, do you want to play a guessing game about each other- I will go, first.');
 
   var userChoice = prompt();
-// What if a user makes an inappropriate choice like 'Get out of my face!'? How can I extend the function to handle that? //
-if (userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
-      console.log('Yes, you want to play; GREAT!');
+
+  // What if a user makes an inappropriate choice like 'Get out of my face!'? How can I extend the function to handle that? //
+  if (userChoice.toLowerCase() === 'yes' || userChoice.toLowerCase() === 'y') {
+    // Show 'Outcome'
+    alert('Yes, you want to play; GREAT!');
   }
 
-  else if (userChoice === 'NO', 'No', 'no', 'N', 'n') {
-          console.log('No, you do not want to play...I guess that about you, too!');
-      }
+  else if (userChoice.toLowerCase() === 'no' || userChoice.toLowerCase() === 'n') {
+    // Show 'Outcome'
+    alert('No, you do not want to play...I guess that about you, too!');
+  }
 
-  else if (userChoice !== 'YES', 'Yes', 'yes', 'Y', 'y', 'NO', 'No', 'no', 'N', 'n') {
-          // Show 'Outcome' //
-          console.log('No, you do not want to play...I guess that about you, too!');
-}
+  else {
+    // Show 'Outcome'
+    alert('No, you do not want to play...I guess that about you, too!');
+  }
 
+// Question 1
+function question1() {
+  var equality = prompt('Is my middle name, Dwayne?');
+  if (equality.toLowerCase() === 'yes' || equality.toLowerCase() === 'y') {
+    // Show 'Outcome'
+    alert('Great, guess!');
+  }
 
-var userChoice = userPersonailty;
-var userPersonailty = prompt();
+  else if (equality.toLowerCase() === 'no' || equality.toLowerCase() === 'n') {
+    // Show 'Outcome'
+    alert('Actually, my middle name is Dwayne.');
+  }
 
-  computerPrompt('Do you believe in equality?');
-    if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-            // Show 'Outcome' //
-        console.log('GREAT!');
-      }
-
-    else if (userPersonailty === 'NO', 'No', 'no', 'N', 'n') {
-            // Show 'Outcome' //
-        console.log ('Call the police!  Rutabagas and squashs have rights!');
-              do {
-                if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-                      // Show 'Outcome' //
-                      console.log ('GREAT!');
-                    }
-                  }
-                else  (userPersonailty !== 'NO', 'No', 'no', 'N', 'n') {
-                      // Show 'Outcome' //
-                      console.log ('I knew you were a troubled person.');
-
-                 } while (true); {
-
-                    console.log ('GREAT!');
-
-              }
-
-              else (userPersonailty !== 'YES', 'Yes', 'yes', 'NO', 'No', 'no') {
-                  /* Show 'Outcome' */
-                  console.log ('Like I said, I really know a lot about you, already.');
-              }
-
-      computerPrompt('Do you believe people are nice when they share?');
-      if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-              // Show 'Outcome' //
-              console.log ('I think you are correct.');
-        }
-
-          else if (userPersonailty === 'NO', 'No', 'no', 'N', 'n') {
-              // Show 'Outcome' //
-              console.log ('Stop watching too, many movies.');
-          }
-
-          else if (userPersonailty !== 'YES', 'Yes', 'yes', 'NO', 'No', 'no') {
-              // Show 'Outcome' //
-              console.log ('And the world, will be a better place...');
-
-        computerPrompt('Do you believe that we just need to show love one to another?');
-        if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-                // Show 'Outcome' //
-                console.log ('You are terrific!');
-
-            if (userPersonailty == 'NO', 'No', 'no', 'N', 'n') {
-                // Show 'Outcome' //
-                console.log ('You know, I have a teddy bear...');
-            }
-
-            else if (userPersonailty !== 'YES', 'Yes', 'yes', 'NO', 'No', 'no') {
-                // Show 'Outcome' //
-                console.log ('...for you, and me- just wait, and see.');
-            }
-          }
-
-          computerPrompt('Do you like wings?');
-          if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-                    // Show 'Outcome' //
-                  console.log ('Really? Me, too!');
-          }
-
-          else if (userPersonailty === 'NO', 'No', 'no', 'N', 'n') {
-                  // Show 'Outcome' //
-                  console.log ('No, problem.');
-          }
-
-          else if (userPersonailty !== 'YES', 'Yes', 'yes', 'NO', 'No', 'no') {
-                  // Show 'Outcome' //
-                  console.log ('Think of your fellow man, lend him a helping hand, Put a little love in your heart, You see, it is getting late, oh, please do not hesitate, Put a little love in your heart, And the world will be a better place, And the world will be a better place for you and me, You just wait and see, Another day goes by, and still the children cry, Put a little love in your heart, If you want the world to know, we will not let hatred grow, Put a little love in your heart, And the world will be a better place, And the world will be a better place for you and me, You just wait and see. Wait and see, Take a good look around and if you are looking down, Put a little love in your heart, I hope when you decide kindness will be your guide, Put a little love in your heart, And the world will be a better place, And the world will be a better place for you and me, You just wait and see, Put a little love in your heart, Put a little love in your heart!');
-              }
-            }
-
-            computerPrompt('So, where are we going for lunch- I knew you like me- you are buying me lunch, right?');
-            if (userPersonailty === 'YES', 'Yes', 'yes', 'Y', 'y') {
-                    // Show 'Outcome' //
-                    console.log ('Yes, I knew I like you!');
-
-                if (userPersonailty === 'NO', 'No', 'no', 'N', 'n') {
-                    // Show 'Outcome' //
-                    console.log ('I eat cheap...');
-                }
-
-                else if (userPersonailty !== 'YES', 'Yes', 'yes', 'NO', 'No', 'no') {
-                    // Show 'Outcome' //
-                    console.log ('Think of your fellow man...');
-                }
-
-function compare (choice1, choice2) {
-
-  var userPersonailty = choice1;
-  var computerChoice = choic  e2;
-
-  if (choice1 > choice2) {
-      // Show 'Outcome' //
-      console.log ('You Win!  There is more to you than I thought!');
-    }
-
-  else if (choice1 < choice2) {
-    // Show 'Outcome' //
-     console.log ('See, I always know a character!');
-    }
+  else {
+    // Show 'Outcome'
+    alert('Like I said, I really know a lot about you, already.');
   }
 }
+
+// Question 2
+function question2() {
+  var share = prompt('Do you believe I like to share?');
+  if (share.toLowerCase() === 'yes' || share.toLowerCase() === 'y') {
+    // Show 'Outcome'
+    alert('You are correct.');
+
+  }
+  else if (share.toLowerCase() === 'no' || share.toLowerCase() === 'n') {
+    // Show 'Outcome'
+    alert('Good try.  Sometimes, I do not feel like sharing; but I do it anyway, as if I do');
+  }
+  else {
+    // Show 'Outcome'
+    alert('Come on: think of your fellow man...And the world, will be a better place...');
+  }
+}
+
+// Question 3
+function question3(){
+  var love = prompt('Do you believe that I am a Marine?');
+  if (love.toLowerCase() === 'yes' || love.toLowerCase() === 'y') {
+    // Show 'Outcome'
+    alert('You are terrific!');
+  }
+  else if (love.toLowerCase() === 'no' || love.toLowerCase() === 'n') {
+  // Show 'Outcome'
+    alert('Actually, I served 3 combat deployments, 2 humanitarian operations; and several temporary assignment duties- just saying.');
+  }
+
+  else {
+    // Show 'Outcome'
+      alert('Guess.');
+  }
+
+// Question 4
+function question4() {
+  var wings = prompt('Do you think I like chicken wings?');
+  if (wings.toLowerCase() === 'yes' || wings.toLowerCase() === 'y') {
+    // Show 'Outcome'
+    alert('Yes! Actually, it depends on who makes them.');
+  }
+  else if (wings.toLowerCase() === 'no' || wings.toLowerCase() === 'n') {
+    // Show 'Outcome'
+    alert('That was not a trick question; but thanks for not stereotyping me.');
+  }
+
+  else {
+    // Show 'Outcome'
+    alert('Guess.');
+  }
+
+// Question 5
+function question5() {
+  var lunch = prompt('So, where are we going for lunch- I knew you like me- you are buying me lunch, right?');
+  if (lunch.toLowerCase() === 'yes' || lunch.toLowerCase() === 'y') {
+    // Show 'Outcome'
+    alert('Yes, I knew I like you!');}
+  else if (lunch.toLowerCase() === 'no' || lunch.toLowerCase() === 'n') {
+    // Show 'Outcome'
+    alert('I eat cheap...');
+  }
+  else {
+    // Show 'Outcome'
+    alert('Think of your fellow man...put a little love in your heart.');
+  }
+
+// Call the functions
+greeting();
+question1();
+question2();
+question3();
+question4();
+question5();
