@@ -1,5 +1,70 @@
 'use strict';
 
+var allInfo = [];
+
+function Info(age, phoneNumber, firstName, lastName, address) {
+  this.age = age;
+  this.phoneNumber = phoneNumber;
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.address = address;
+  this.Message = Message;
+  allInfo.push(this);
+  theForm.addEventListener('eMail', convertForm);
+}
+
+function handleEvent(event) {
+  event.preventDefault();
+  var dropDownMenu = document.getElementById('dropDownMenu');
+  var firstName = document.getElementById('firstName');
+  var lastName = document.getElementById('lastName');
+  var phoneNumber = document.getElementById('phoneNumber');
+  var address = document.getElementById('address');
+  var age = document.getElementById('age');
+  var Message = document.getElementById('Message');
+  new Info(age, firstName, lastName, address, phoneNumber, Message);
+  pushInfo();
+}
+
+function handleForm(event) {
+
+  console.log(event);
+  var dropDownMenu = event.target.form.elements.dropDownMenu.value;
+  var phoneNumber = event.target.form.elements.phoneNumber.value;
+  var firstName = event.target.form.elements.firstNameInput.value;
+  var lastName = event.target.form.elements.lastNameInput.value;
+  var address = event.target.form.elements.addressInput.value;
+  var message = event.target.form.elements.MessageInput.value;
+
+  if(!dropDownMenu || !phoneNumber || !firstName || !lastName || !address || !Message) {
+    return null;
+  }
+
+  event.target.form.elements.dropDownMenu.value = null;
+  event.target.form.elements.phoneNumber.value = null;
+  event.target.form.elements.firstNameInput.value = null;
+  event.target.form.elements.lastNameInput.value = null;
+  event.target.form.elements.addressInput.value = null;
+  event.target.form.elements.MessageInput.value = null;
+
+}
+
+  // info + eMail //
+function pushInfo(){
+  localStorage.clear();
+  var allInfoJSON = JSON.stringify(allInfo);
+  localStorage.allInfo = allInfoJSON;
+}
+
+function pullInfo() {
+  var retrieveInfoData = localStorage.allInfo;
+  var parseInfoData = JSON.parse(retrieveInfoData);
+  for (var i = 0; i < parseInfoData.length; i++) {
+    allInfo[i] = parseInfoData[i];
+  }
+  theForm.addEventListener('eMail', convertForm);
+}
+
 // Collect user's name, and customize greeting to user based on their input
 function greeting() {
   var userName = prompt('What is your name?');
@@ -148,18 +213,18 @@ function question5() {
     }
 }
 
-// Question 7
-function question7() {
-  var instruments = prompt('What other instruments do I like?');
-  if [userChoice === Piano, Trumpet, Cello, Violin] {
-    // Show 'Outcome'
-    alert('Yes, I knew I like you!');
-      console.log ('Correct.')
-  }
+  // Question 7
+  function question7() {
+    var instruments = prompt('What other instruments do I like?');
+    if (userChoice === Piano, Trumpet, Cello, Violin) {
+      // Show 'Outcome'
+      alert('Yes, I knew I like you!');
+        console.log ('Correct.')
+    }
 
   else if (userChoice !== 'Alto Saxophone' || 'Tenor Saxophone') {
     for (i=0; i<guesses.length; i++)
-    if [userChoice === Piano, Trumpet, Cello, Violin] {
+    if (userChoice === Piano, Trumpet, Cello, Violin) {
       // Show 'Outcome'
       alert('Yes, I knew I like you!');
         console.log ('Correct.')
@@ -175,7 +240,27 @@ function question7() {
 function results() {
   var userResult1 = console.log ('Correct.');
   var userResult2 = console.log ('Incorrect.');
-  for (userResult1 && userResult2);
+  if (userChoice !== userResult2 && userChoice > userResult2) {
+  for (i=0; i<guesses.length; i++)
+    // Show 'Outcome'
+    alert ( userResult1 + 'answers guessed correctly.');
+      console.log ('Correct.')
+  }
+
+  else if (userChoice === userResult1 && userChoice === userResult2) {
+  for (i=0; i<guesses.length; i++)
+    // Show 'Outcome'
+    alert ( userResult1 && userResult2 + 'It is a tie!');
+      console.log ('It is a tie!  That was fun!')
+  }
+
+  else if (userChoice !== userResult1 && userChoice > userResult1) {
+  for (i=0; i<guesses.length; i++)
+    // Show 'Outcome'
+    alert ( userResult2 + 'answers guessed incorrectly.');
+      console.log ('Nice try.  Better luck, next time.')
+  }
+}
   alert ( userResult1 + 'answers guessed correctly.')
 
 // Call the functions

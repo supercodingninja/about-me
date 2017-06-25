@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html {
+  background:  url(https://giphy.com/gifs/usnationalarchives-vintage-6MlOHrO68imac) repeat center center fixed;
+  background-size: cover;
+}
+
+
+* {
+  background-color: black;
+}
+
+h1 a {
+  color: #D4AF37;
+  text-align: top;
+}
+
+h2 {
+  color: white;
+  font-family: cursive;
+  text-align: top;
+  }
+
+h3 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+
+h5 {
+  color: white;
+  font-family: cursive;
+  text-align: right-center;
+}
+
+body {
+    height: 100%;
+}
+
+nav a {
+  color: #D4AF37;
+}
+
+nav a:hover {
+  color: #blue;
+}
+
+aside span a {
+  color: #D4AF37;
+}
+
+* {
+  color: #D4BF37;
+}
+
+input {
+  color: black;
+  background-color: white;
+}
+
+input:hover {
+  color: white;
+  background-color: black;
+}
+
+p {
+  font-family: cursive;
+  font-size: 16px;
+}

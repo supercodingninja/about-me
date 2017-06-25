@@ -1,64 +1,78 @@
-/*I need to style html markup: make the questions flashy/appealling.*/
-body {
-      background-color: black;
-    }
-
 h1 {
-    color: white;
-    font-size: 24px;
-    font-family:fantasy;
-  }
+  color: blue;
+  background-color: #D4AF37 ;
+  text-align: center;
+}
+
+h1 a:hover {
+  color: #D4AF37;
+  background-color: blue;
+  text-align: center;
+}
 
 h2 {
-    color: white;
-    font-size: 24px;
-    font-family:fantasy;
+  color: white;
+  font-family: cursive;
+  text-align: center;
   }
 
 h3 {
-    color: white;
-    font-size: 24px;
-    font-family:fantasy;
-  }
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
 
-body h4 {
-    color: white;
-    font-size: 100px;
-    font-family:fantasy;
-    -webkit-animation: fadi 5s 1;
-    -moz-animation: fadi 5s 1;
-  }
-  @-webkit-key-frames fadi {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-moz-keyframes fadi {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-a {
-    color: blue;
-    font-size: 50px;
-    font-family:fantasy;
-  }
-
-table {
-    align-items: center;
-    align-content: center;
-  }
+h4 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
 
 h5 {
-    color: white;
-    font-size: 24px;
-    font-family:fantasy;
-    text-align: center;
-  }
+  color: white;
+  font-family: cursive;
+  text-align: right-center;
+}
 
-h5 script {
-    padding: 1em 100px 5% 100px;
-  }
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html {
+  background:  url(https://scontent.xx.fbcdn.net/v/t1.0-9/10470939_682190231890316_4240738380043923765_n.jpg?oh=17adc83469edcac2ca34c502efb6b537&oe=59AF0216) repeat center center fixed;
+  background-size: cover;
+}
 
-aside h4 {
-  text-align: right;
+body {
+    height: 100%;
+}
+
+nav a {
+  color: blue;
+  background-color: #D4AF37;
+}
+
+nav a:hover {
+  color: #D4AF37;
+  background-color: blue;
+}
+
+aside span a {
+  color: #D4AF37;
+}
+
+* {
+  color: #D4BF37;
+}
+
+input {
+  color: black;
+  background-color: white;
+}
+
+input:hover {
+  color: white;
+  background-color: black;
+}
+
+p {
+  font-family: cursive;
+  font-size: 26px;
 }
